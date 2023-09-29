@@ -229,38 +229,31 @@ button {
 /* Advantage  */
 .advantage-section {
   background: var(--white);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .advantage-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .advantage-link {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
+  justify-content: center;
 }
 .advantage-icon {
-  display: flex;
-  align-items: center;
-  width: 264px;
-  height: 112px;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  fill: var(--CLOUD);
-  justify-content: center;
-  background-color: var(--cloud);
-  margin-bottom: 8px;
+  display: none;
 }
 .advantage-title {
   color: var(--navyblue);
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 700;
   line-height: 1.2em;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 .advantage-text {
   color: var(--slate);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5em;
   letter-spacing: 0.02em;
 }
@@ -268,19 +261,23 @@ button {
 /* Team  */
 .team-section {
   background-color: var(--cloud);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .team-item {
   background-color: var(--white);
-  flex-basis: calc((100%-72px) / 4);
+  flex-basis: 100%;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-item img {
+  margin: 0 auto;
 }
 .team {
   flex-direction: column;
@@ -365,7 +362,7 @@ button {
   row-gap: 48px;
 }
 .portfolio-link {
-  width: calc((100% - 48px) / 3);
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover .portfolio-overlay-text {
@@ -420,7 +417,6 @@ button {
 /* Footer  */
 .footer {
   background: var(--navyblue);
-  padding: 100px 0;
 }
 .footer-text {
   color: var(--white);
@@ -455,8 +451,9 @@ button {
 }
 .container-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  width: 1158px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
