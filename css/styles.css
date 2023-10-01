@@ -785,3 +785,30 @@ button {
   border-radius: 50%;
   background-color: var(--CORNFLOWER);
 }
+.mobile-menu-link {
+  color: var(--navyblue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.mobile-menu-link.current {
+  color: var(--hover-blu);
+}
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-contacts-link {
+  color: var(--slate);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+}
+.mobile-contacts-link.accent {
+  color: var(--iris);
+}
+.mobile-contacts-item:not(:last-child) {
+  margin-bottom: 24px;
+}
