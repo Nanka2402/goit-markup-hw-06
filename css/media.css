@@ -46,12 +46,11 @@
     color: var(--hover-blu);
   }
 
-  @media screen and(max-width:1157px) {
+  @media screen and (max-width: 1157px) {
     .address-item:not(:last-child) {
       margin-bottom: 12px;
     }
   }
-
   .address {
     background-color: var(--white);
   }
@@ -68,19 +67,22 @@
   /* Hero section  */
   .hero-section {
     max-width: 768px;
-    padding-top: 112px;
-    padding-bottom: 112px;
+    /* padding-top: 112px;
+    padding-bottom: 112px; */
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg/Dark-bg-tbl@1x.jpg);
+      url(../images/hero-bg/Dark-bg-tbl@1x-min.jpg);
   }
+
   .hero-title {
     max-width: 496px;
     font-size: 56px;
     margin-bottom: 36px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
   }
   /* Advantage section  */
   .advantage-icon {
@@ -183,7 +185,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg/people-office1.jpg);
+      url(../images/hero-bg/people-office-min.jpg);
   }
   .hero-title {
     margin-bottom: 48px;
@@ -239,6 +241,9 @@
     margin: 0 auto;
     padding: 0 15px;
   }
+  .footer {
+    padding: 100px 0;
+  }
   .footer-info {
     margin-right: 120px;
   }
@@ -247,8 +252,5 @@
   }
   .menu-container {
     display: none;
-  }
-  /* Modal window  */
-  .modal {
   }
 }
